@@ -1,6 +1,6 @@
 import 'package:parse_server_sdk_flutter/parse_server_sdk.dart';
 
-const String _keyTableName = 'Messages';
+const String _keyTableName = 'Message';
 const String keyMessage = 'message';
 const String keyUser = 'user';
 

@@ -39,19 +39,25 @@ class _HomeScreenState extends State<HomeScreen> {
             return Center(
               child: Container(
                 padding: const EdgeInsets.all(10),
-                color: (index % 2 == 0) ? Colors.grey.shade100 : Colors.grey.shade200,
+                color: (index % 2 == 0)
+                    ? Colors.grey.shade100
+                    : Colors.grey.shade200,
                 height: 55,
                 child: Column(
                   children: <Widget>[
                     Align(
-                      alignment: (index % 2 == 0) ? Alignment.bottomLeft : Alignment.bottomRight,
+                      alignment: (index % 2 == 0)
+                          ? Alignment.bottomLeft
+                          : Alignment.bottomRight,
                       child: Text(
                         lst[index].user.objectId,
                         style: Theme.of(context).textTheme.subtitle2,
                       ),
                     ),
                     Align(
-                      alignment: (index % 2 == 0) ? Alignment.bottomLeft : Alignment.bottomRight,
+                      alignment: (index % 2 == 0)
+                          ? Alignment.bottomLeft
+                          : Alignment.bottomRight,
                       child: Text(
                         lst[index].message,
                         style: Theme.of(context).textTheme.bodyText2,
@@ -134,7 +140,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   void _handleLiveQuery() async {
     final LiveQuery liveQuery = LiveQuery(debug: true);
-    QueryBuilder<ParseObject> query = QueryBuilder<ParseObject>(ParseObject('Messages'));
+    QueryBuilder<ParseObject> query =
+        QueryBuilder<ParseObject>(ParseObject('Message'));
 
     print('LiveQueryURL ${ParseCoreData().liveQueryURL}');
 

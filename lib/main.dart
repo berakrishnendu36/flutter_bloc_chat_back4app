@@ -4,10 +4,10 @@ import 'package:bloc/bloc.dart';
 import 'package:flutter_bloc_back4app/routes.dart';
 import 'package:parse_server_sdk_flutter/parse_server_sdk.dart';
 
-const String PARSE_APP_ID = '8MceXz6TcG5cY1NAweWyFiWgBkSuTMf4bfS2z9sj';
+const String PARSE_APP_ID = 'VWJ9fQYXmZj1xV0D33gtaVStJplu1mvhbOnT2B1w';
 const String PARSE_APP_URL = 'https://parseapi.back4app.com';
-const String MASTER_KEY = 'EYeDspB0mGBSjA7wYYSxlq3rQS95twuXWWbbIUal';
-const String LIVE_QUERY_URL = 'wss://trongdth.back4app.io';
+const String MASTER_KEY = 'Ud9SIrE0ZMdDPN42bFexlgwYnwCrn7rrQMgfCHjA';
+const String LIVE_QUERY_URL = 'wss://kriish.b4a.io';
 
 class SimpleBlocObserver extends BlocObserver {
   @override
